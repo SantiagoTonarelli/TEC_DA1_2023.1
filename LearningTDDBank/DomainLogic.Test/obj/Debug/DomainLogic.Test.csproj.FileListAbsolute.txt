@@ -13,3 +13,5 @@ C:\Users\santi\Desktop\TDD\LearningTDDBank\DomainLogic.Test\obj\Debug\DomainLogi
 C:\Users\santi\Desktop\TDD\LearningTDDBank\DomainLogic.Test\obj\Debug\DomainLogic.Test.csproj.CopyComplete
 C:\Users\santi\Desktop\TDD\LearningTDDBank\DomainLogic.Test\obj\Debug\DomainLogic.Test.dll
 C:\Users\santi\Desktop\TDD\LearningTDDBank\DomainLogic.Test\obj\Debug\DomainLogic.Test.pdb
+C:\Users\santi\Desktop\TDD\LearningTDDBank\DomainLogic.Test\bin\Debug\Logic.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\DomainLogic.Test\bin\Debug\Logic.pdb

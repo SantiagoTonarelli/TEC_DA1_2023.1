@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Logic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace DomainLogic.Test
@@ -22,10 +23,24 @@ namespace DomainLogic.Test
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void CreateAccountTest()
         {
             Console.WriteLine("TestMethod");
+            //Arrange
+            string userName = "Juan";
+            string pass = "A123456";
+            BankManager aBank = new BankManager();
+            Account anAccount = new Account()
+            {
+                UserName = userName,
+                Pass = pass,
+            };
 
+            //Act
+            aBank.addAccount(anAccount);
+
+            //Assert
+            Assert.AreEqual(1, aBank.Accounts.Count);
         }
     }
 }

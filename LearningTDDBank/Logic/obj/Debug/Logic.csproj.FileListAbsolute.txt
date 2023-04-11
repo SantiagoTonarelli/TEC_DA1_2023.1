@@ -1,0 +1,6 @@
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Logic\bin\Debug\Logic.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Logic\bin\Debug\Logic.pdb
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Logic\obj\Debug\Logic.csproj.AssemblyReference.cache
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Logic\obj\Debug\Logic.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Logic\obj\Debug\Logic.pdb
