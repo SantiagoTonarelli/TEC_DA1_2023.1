@@ -1,4 +1,4 @@
-﻿namespace Logic
+﻿namespace DomainLogic
 {
     public class Account
     {

@@ -1,4 +1,4 @@
-﻿using Logic;
+﻿using DomainLogic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -37,10 +37,21 @@ namespace DomainLogic.Test
             };
 
             //Act
-            aBank.addAccount(anAccount);
+            aBank.AddAccount(anAccount);
 
             //Assert
             Assert.AreEqual(1, aBank.Accounts.Count);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(IndexOutOfRangeException), "Index was outside the bounds of the array6.")]
+        public void MyTestMethod()
+        {
+            // Arrange
+            int[] numbers = { 1, 2, 3 };
+
+            // Act
+            var number = numbers[3]; // This line will throw an IndexOutOfRangeException
         }
     }
 }

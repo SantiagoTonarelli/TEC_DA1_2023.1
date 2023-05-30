@@ -6,3 +6,15 @@ C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.SuggestedB
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.exe
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.pdb
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Logic.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Logic.pdb
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.CopyComplete
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\DataAccess.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Domain.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\EntityFramework.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\DataAccess.pdb
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\DataAccess.dll.config
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Domain.pdb
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\EntityFramework.xml
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\EntityFramework.SqlServer.xml
