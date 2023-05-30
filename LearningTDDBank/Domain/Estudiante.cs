@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    internal class Estudiante
+    public class Estudiante
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public virtual ICollection<Curso> Cursos { get; set; }
     }
 }

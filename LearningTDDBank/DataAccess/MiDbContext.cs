@@ -11,5 +11,11 @@ namespace DataAccess
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Persona> Personas { get; set; }
+        public DbSet<Direccion> Direcciones { get; set; }
+        public DbSet<Departamento> Departamentos { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<Estudiante> Estudiantes { get; set; }
+        public DbSet<Curso> Cursos { get; set; }
     }
 }
