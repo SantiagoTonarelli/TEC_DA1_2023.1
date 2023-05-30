@@ -8,8 +8,8 @@ namespace Domain
 {
     public class Curso
     {
-        public int Id { get; set; }
+        public int CursoId { get; set; }
         public string Nombre { get; set; }
-        public virtual ICollection<Estudiante> Estudiantes { get; set; }
+        public virtual ICollection<Estudiante> MisEstudiantes { get; set; }
     }
 }

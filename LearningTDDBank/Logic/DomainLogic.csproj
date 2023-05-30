@@ -43,7 +43,15 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="BankManager.cs" />
+    <Compile Include="IPersonaRepository.cs" />
+    <Compile Include="PersonaLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{28b2b684-6db3-4c0b-9e1d-308059799991}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
