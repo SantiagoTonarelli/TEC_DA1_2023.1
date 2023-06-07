@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using DataAccess;
+using Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace Logic
     {
         private readonly IPersonaRepository _repository;
 
+        public LogicaPersona()
+        {
+            _repository = new PersonaRepository();
+        }
+        
         public LogicaPersona(IPersonaRepository repository)
         {
             _repository = repository;

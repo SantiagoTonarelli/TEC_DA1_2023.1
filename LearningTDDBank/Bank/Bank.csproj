@@ -70,7 +70,7 @@
       <Name>Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logic\DomainLogic.csproj">
-      <Project>{42dca191-21ff-41c3-8a7b-8c59afe6d889}</Project>
+      <Project>{42DCA191-21FF-41C3-8A7B-8C59AFE6D889}</Project>
       <Name>DomainLogic</Name>
     </ProjectReference>
   </ItemGroup>

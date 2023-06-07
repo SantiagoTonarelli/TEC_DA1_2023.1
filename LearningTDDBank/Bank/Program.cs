@@ -1,6 +1,5 @@
 ﻿using DataAccess;
 using Domain;
-using DomainLogic;
 using Logic;
 using System;
 using System.Collections.Generic;
@@ -46,11 +45,9 @@ namespace Bank
 
         private static void TestearLogicaYRepositorio()
         {
-            // Crear el contexto de base de datos
-            MiDbContext contexto = new MiDbContext();
 
             // Crear la instancia de LogicaPersona
-            LogicaPersona logicaPersona = new LogicaPersona(new PersonaRepository(contexto));
+            LogicaPersona logicaPersona = new LogicaPersona();
 
             try
             {

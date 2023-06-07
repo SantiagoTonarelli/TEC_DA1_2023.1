@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logic
+namespace DataAccess
 {
     public interface IPersonaRepository
     {
@@ -14,5 +14,6 @@ namespace Logic
         void EliminarPersona(int personaId);
         void ModificarPersona(int personaId, string nombre);
         void ModificarPersonaOtraOpcion(Persona persona);
+        void DeleteAll();
     }
 }

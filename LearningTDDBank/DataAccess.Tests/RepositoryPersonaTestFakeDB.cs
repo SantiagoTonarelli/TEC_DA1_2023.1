@@ -8,22 +8,25 @@ using System.Linq;
 namespace DataAccess.Tests
 {
     [TestClass]
-    public class RepositoryPersona
+    public class RepositoryPersonaTestFakeDB
     {
+        private static MiDbContext _contexto;
         private IPersonaRepository _repository;
 
         [TestInitialize]
         public void TestInit()
         {
-            _repository = new PersonaRepository();
-            _repository.DeleteAll();
+            Database.SetInitializer(new DropCreateDatabaseAlways<MiDbContext>());
+            _contexto = new MiDbContext();
+            _contexto.Database.Initialize(true);
+            _repository = new PersonaRepository(_contexto);
         }
 
         [TestCleanup]
         public void TestClean()
         {
-            _repository = new PersonaRepository();
-            _repository.DeleteAll();
+            // Dispose the in-memory database after all tests have run
+            _contexto.Dispose();
         }
 
         [TestMethod]
@@ -37,7 +40,7 @@ namespace DataAccess.Tests
             _repository.AgregarPersona(persona, direccion);
 
             // Assert
-            var personasConDireccion = _repository.ObtenerPersonasConDireccion(); ;
+            var personasConDireccion = _contexto.Personas.ToList();
             var personaResultante = personasConDireccion.First();
             //MUCHOS EQUALS, QUE SE DEBERIA HACER?
             Assert.AreEqual(1, personasConDireccion.Count);
@@ -58,7 +61,7 @@ namespace DataAccess.Tests
             _repository.AgregarPersona(persona, direccion);
 
             // Assert
-            var personasConDireccion = _repository.ObtenerPersonasConDireccion();
+            var personasConDireccion = _contexto.Personas.ToList();
             var personaResultante = personasConDireccion.First();
             //MUCHOS EQUALS, QUE SE DEBERIA HACER?
             Assert.AreEqual(1, personasConDireccion.Count);

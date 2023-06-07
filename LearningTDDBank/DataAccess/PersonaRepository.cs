@@ -1,9 +1,9 @@
 ﻿using Domain;
-using Logic;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +12,11 @@ namespace DataAccess
     public class PersonaRepository : IPersonaRepository
     {
         private readonly MiDbContext _contexto;
+
+        public PersonaRepository()
+        {
+            _contexto = new MiDbContext();
+        }
 
         public PersonaRepository(MiDbContext contexto)
         {
@@ -54,6 +59,20 @@ namespace DataAccess
         {
             _contexto.Entry(persona).State = EntityState.Modified;
             _contexto.SaveChanges();
+        }
+
+        public void DeleteAll()
+        {
+            foreach (Direccion d  in _contexto.Direcciones.ToList())
+            {
+                _contexto.Direcciones.Remove(d);
+                _contexto.SaveChanges();
+            }
+            foreach (Persona p in _contexto.Personas.ToList())
+            {
+                _contexto.Personas.Remove(p);
+                _contexto.SaveChanges();
+            }
         }
     }
 }

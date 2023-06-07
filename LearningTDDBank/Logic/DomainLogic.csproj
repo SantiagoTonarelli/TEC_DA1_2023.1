@@ -43,11 +43,14 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="BankManager.cs" />
-    <Compile Include="IPersonaRepository.cs" />
     <Compile Include="PersonaLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{D9756499-1A9D-4EE7-A3C1-FA37A0153E62}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{28b2b684-6db3-4c0b-9e1d-308059799991}</Project>
       <Name>Domain</Name>

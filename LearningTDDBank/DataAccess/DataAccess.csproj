@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPersonaRepository.cs" />
     <Compile Include="MiDbContext.cs" />
     <Compile Include="Migrations\202305300243125_migration-1.cs" />
     <Compile Include="Migrations\202305300243125_migration-1.designer.cs">
@@ -68,10 +69,6 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{28B2B684-6DB3-4C0B-9E1D-308059799991}</Project>
       <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Logic\DomainLogic.csproj">
-      <Project>{42DCA191-21FF-41C3-8A7B-8C59AFE6D889}</Project>
-      <Name>DomainLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
