@@ -10,16 +10,16 @@ namespace Logic
 {
     public class LogicaPersona
     {
-        private readonly IPersonaRepository _repository;
+        public readonly IPersonaRepository Repository;
 
         public LogicaPersona()
         {
-            _repository = new PersonaRepository();
+            Repository = new PersonaRepository();
         }
         
         public LogicaPersona(IPersonaRepository repository)
         {
-            _repository = repository;
+            Repository = repository;
         }
 
         // En esta clase hay errores Que seran vistos y discutidos en clase
@@ -48,24 +48,24 @@ namespace Logic
             }
 
             // Agregar la persona con la dirección al repositorio
-            _repository.AgregarPersona(persona, direccion);
+            Repository.AgregarPersona(persona, direccion);
         }
 
         public ICollection<Persona> ObtenerPersonasConDireccion()
         {
-            return _repository.ObtenerPersonasConDireccion();
+            return Repository.ObtenerPersonasConDireccion();
         }
 
         public void EliminarPersona(int personaId)
         {
             // Validar que la persona exista antes de eliminarla
-            var persona = _repository.ObtenerPersonasConDireccion().FirstOrDefault(p => p.PersonaId == personaId);
+            var persona = Repository.ObtenerPersonasConDireccion().FirstOrDefault(p => p.PersonaId == personaId);
             if (persona == null)
             {
                 throw new ArgumentException("La persona no existe");
             }
 
-            _repository.EliminarPersona(personaId);
+            Repository.EliminarPersona(personaId);
         }
 
         public void ModificarPersona(int id, string nombre)
@@ -84,13 +84,13 @@ namespace Logic
 
             // Validar que la persona exista antes de modificarla
             // No es correcto deberian utilizar un existe en el repositorio!!!!!!
-            var existingPersona = _repository.ObtenerPersonasConDireccion().FirstOrDefault(p => p.PersonaId == id);
+            var existingPersona = Repository.ObtenerPersonasConDireccion().FirstOrDefault(p => p.PersonaId == id);
             if (existingPersona == null)
             {
                 throw new ArgumentException("La persona no existe");
             }
 
-            _repository.ModificarPersona(id, nombre);
+            Repository.ModificarPersona(id, nombre);
         }
 
     }

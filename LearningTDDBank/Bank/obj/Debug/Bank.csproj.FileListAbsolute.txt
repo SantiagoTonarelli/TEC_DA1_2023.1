@@ -1,6 +1,3 @@
-C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
-C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
-C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Bank.exe.config
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Bank.exe
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Bank.pdb
@@ -15,6 +12,9 @@ C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Domain.pdb
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\Logic.pdb
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\EntityFramework.xml
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.csproj.CopyComplete
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.exe
 C:\Users\santi\Desktop\TDD\LearningTDDBank\Bank\obj\Debug\Bank.pdb
